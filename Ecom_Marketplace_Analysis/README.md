@@ -3,7 +3,7 @@
 <img src="0_Resources/Images/cosmic_cruiser.gif" alt="cosmic_cruiser" width="1200"/>
 
 ## Introduction
-Luna* is a children's bike brand with e-commerce stores on both Lazada and Shopee. I set out to analyze customer purchasing behaviour and marketplace trends to identify opportunities to improve sales performance.
+Luna is a children's bike brand with e-commerce stores on both Lazada and Shopee. I set out to analyze customer purchasing behaviour and marketplace trends to identify opportunities to improve sales performance.
 
 ### Questions to analyze:
 1. Which sales platform is generating the highest profit?
@@ -281,3 +281,5 @@ The analysis revealed several key insights into Luna’s sales performance and c
 - **Cart Value vs. Basket Size:** Lazada has a higher average cart value despite similar basket sizes, indicating more high ticket purchases or effective upselling.
 
 - **Customer Type:** With about 85% first-time buyers, Luna excels at acquisition but has limited repeat business, likely due to product lifecycle limits.
+
+**⚠️Disclaimer:** This dataset is based on real-world data but certain elements such as brand name, item names, and other potentially sensitive identifiers have been modified to maintain confidentiality.
