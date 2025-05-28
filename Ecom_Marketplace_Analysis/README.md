@@ -103,23 +103,26 @@ The dataset used for this project contains real-world marketplace data on Shopee
 ### 🧮 Skills: Power Query, PivotTables & PivotCharts
 
 #### 🔍 Power Query
-Since Luna has 9 gear items in store and the rest are accessories, I created a custom column `Product Category` with Power Query:
 
-``` 
-=if List.Contains({
-    "Luna X1 Urban Rider",  
-    "Luna X3 Urban Rider",  
-    "Luna X5 Urban Rider",
-    "Luna X Galaxy Urban Rider",
-    "Luna X Shadow Urban Rider",
-    "Luna Cosmic Cruiser",
-    "Luna Cosmic Cruiser Galaxy",
-    "Luna Cosmic Cruiser Nimbus",
-    "Luna Cosmic Cruiser Shadow" 
-}, [Item Name]) 
-then "Gear" 
-else "Accessories"
-```
+
+- Since Luna has 9 gear items in store and the rest are accessories, I created a custom column `Product Category` with Power Query:
+
+    ```m
+    =if List.Contains({
+        "Luna X1 Urban Rider",  
+        "Luna X3 Urban Rider",  
+        "Luna X5 Urban Rider",
+        "Luna X Galaxy Urban Rider",
+        "Luna X Shadow Urban Rider",
+        "Luna Cosmic Cruiser",
+        "Luna Cosmic Cruiser Galaxy",
+        "Luna Cosmic Cruiser Nimbus",
+        "Luna Cosmic Cruiser Shadow" 
+    }, [Item Name]) 
+    then "Gear" 
+    else "Accessories"
+    ```
+
 
 #### 📈PivotTables & PivotCharts
 **Top Product Category**
@@ -249,7 +252,7 @@ To analyze the relationship between average `Cart Value` and `Basket Size`, a co
 
    <img src="0_Resources/Images/06_power_query.png" alt="06_power_query" width="900"/>
 
-- A conditional column `Customer Type Breakdown` was then created to classify customers. Those with a `Purchase Count` > 1 were labelled as Repeat Customers, while others were labelled as First-Time Buyers.
+- A conditional column `Customer Type Breakdown` was then created to classify customers. Those with a `Purchase Count` > 1 were labelled as "Repeat Customers", while others were labelled as "First Time Buyers".
 
    <img src="0_Resources/Images/06_conditional_column.png" alt="06_conditional_column" width="900"/>
 
@@ -259,7 +262,7 @@ To analyze the relationship between average `Cart Value` and `Basket Size`, a co
  ### 📊 Analysis
 
 #### 💡 Insights
-<img src="0_Resources/Images/06_pivotchart.png" alt="06_pivotchart" width="900"/>
+<img src="0_Resources/Images/06_pivotchart.png" alt="06_pivotchart" width="800"/>
 
 - Lazada -92.2% First Time Buyer, 7.8% Repeat Customers
 - Shopee - 92.4% First Time Buyer, 7.6% Repeat Customers
